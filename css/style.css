@@ -1,214 +1,125 @@
-body,
-div,
-ul,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding:0;
-  margin:0;
-  font-family: "Roboto", sans-serif;
+body {
+  background-color: #616161;
 }
 
-.clear-fix {
-  overflow: auto;
+nav {
+  background-color: #009688;
 }
 
-.education-entry,
-.work-entry,
-.project-entry {
-  padding: 0 5%;
-}
-
-h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  display: inline;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
-}
-
-h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  padding:10px 5%;
-
-}
-
-
+/* Format dates and locations for Work and Education */
 .date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
   float: left;
+  padding-left: 0.75em;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
   float: right;
-
+  padding-right: 0.75em;
 }
 
-p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
-}
-
-a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
-}
-
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
-}
-
-#skills-h3 {
-  color: #f5ae23;
-  display: none;
-}
-
-.orange {
-  background-color: #f5ae23;
-}
-
-.orange-text {
-  color: #f5ae23;
-}
-
-.white-text {
-  font-weight: bold;
-  color: #fff;
-}
-
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear:both;
-}
-
-.dark-gray {
-  background-color: #4a4a4a;
-}
-
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
-}
-
-.flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+/* Align Bio character Pic */
+.bioPic {
   padding: 10px;
+  width: 250px;
 }
 
-.center-content {
-  padding: 2.5% 5%;
+#footer-title {
+  padding-left: 0.6em;
 }
 
-ul {
-  list-style-type: none;
+#footer-text {
+  padding-left: 1.5em;
+  font-size: 1.5em;
 }
 
-.biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
+#footer-signature {
+  padding-top: 1em;
+  padding-left: 5em;
 }
 
-img {
-  padding: 10px;
+.footer-logo {
+  margin-right: 2em;
 }
 
-span {
-  padding: 5px;
+/* Heart Shape created by Nicolas Gallagher (http://nicolasgallagher.com/) */
+.heart-shape{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #ffcdd2;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.heart-shape:before,
+.heart-shape:after{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ffcdd2;
+}
+.heart-shape:before{
+    bottom: 0px;
+    left: -10px;
+}
+.heart-shape:after{
+    top: -10px;
+    right: 0px;
+}
+/* Heart Shape END */
+
+/* Align logo (top-right) */
+.brand-logo {
+  margin-top: 4px;
+  margin-right: 4px;
 }
 
-#lets-connect {
-  text-align: center;
+/* Adjust Materialize Modal Options */
+/* Adjust to make sure image & text will fit on footer */
+.modal.bottom-sheet {
+  max-height: 85%;
+}
+/* Adjust color */
+.modal .modal-footer {
+    background-color: #e0f2f1;
 }
 
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
+@media only screen and (max-width : 992px) {
+  nav .brand-logo {
+    left: 90%;
   }
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
 
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-}
-
+/* Google Map Options */
 #map {
   display: block;
   height: 100%;
-  margin: 0 5%;
 }
 
-#map-div {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+#mapDiv {
+  height: 450px;
+  max-width: 100%;
+  padding-bottom: 1%;
 }
 
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
+/* List Items horizontally */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
 }
