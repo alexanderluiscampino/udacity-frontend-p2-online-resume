@@ -39,6 +39,7 @@ nav {
 
 .footer-logo {
   margin-right: 2em;
+  max-height: 32px;
 }
 
 /* Heart Shape created by Nicolas Gallagher (http://nicolasgallagher.com/) */
@@ -94,12 +95,12 @@ nav {
     background-color: #e0f2f1;
 }
 
+/* Adjust media query so brand-logo doesn't center */
 @media only screen and (max-width : 992px) {
   nav .brand-logo {
     left: 90%;
   }
 }
-
 
 /* Google Map Options */
 #map {
