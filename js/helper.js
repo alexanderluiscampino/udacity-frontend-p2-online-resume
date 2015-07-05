@@ -62,7 +62,7 @@ var HTMLfooterText = '<p id="footer-text" class="thin">I\'m' +
                      'by Udacity. This is beginner\'s code. It\'s built on top of' +
                      '<a href="https://github.com/udacity/frontend-nanodegree-resume" class="flow-text orange lighten-5 black-text hoverable" target="_blank"> the original </a>' +
                      'utilizing no more than what\'s taught up to Project 2.<br><br>Are you a student and <span class="heart-shape"></span>this?' +
-                     '<a href="https://github.com/d3moid/online-resume" target="_blank" class="flow-text yellow lighten-5 black-text hoverable"> Fork the code </a>to see how easy it is!</p>';
+                     '<a href="https://github.com/d3moid/frontend-nanodegree-resume" target="_blank" class="flow-text yellow lighten-5 black-text hoverable"> Fork the code </a>to see how easy it is!</p>';
 var HTMLfooterEnd = '</div>';
 
 // FOOTER - Image
