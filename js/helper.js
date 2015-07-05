@@ -232,7 +232,7 @@ function initializeMap() {
     var markerIcon = bio.characters[refID].markerIcon;
     var marker = new google.maps.Marker({
       map: map,
-      // Add marker icon here
+      // Change marker icon option
       icon: markerIcon,
       position: placeData.geometry.location,
       title: name

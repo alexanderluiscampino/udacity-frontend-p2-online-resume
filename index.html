@@ -10,18 +10,18 @@
       <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body unresolved>
+    <body>
 
       <!-- Fixed Navigation Bar -->
       <div class="navbar-fixed">
         <!-- Navigation -->
         <nav>
           <div class="nav-wrapper">
-            <ul id="nav" class="right">
+            <ul class="right">
               <!-- About - Opens Footer Modal -->
               <a class="about brand-logo right btn-floating btn-large waves-effect waves-dark teal darken-2 modal-trigger" href="#footer">?</a>
             </ul>
-            <ul id="nav" class="left navButtons">
+            <ul class="left navButtons">
               <!-- Logo -->
               <li class="hide-on-small-only"><a class="about flow-text teal darken-1 modal-trigger" href="#footer"><span class="thin">o n</span> R E S U M E</a></li>
               <!-- Character Selection -->
@@ -105,14 +105,15 @@
     <footer>
         <div id="footer" class="modal bottom-sheet">
           <div class="row">
-          <div class="modal-content col s12 white">
-            <div id="footerContent">
-              <!-- Footer content goes here -->
-            </div>
-            <div class="hide-on-small-only col m3 left modal-action modal-close">
-              <div id="footerImage">
-                <!-- Random footer image goes here
-                     Triggers when clicking the .about class -->
+            <div class="modal-content col s12 white">
+              <div id="footerContent">
+                <!-- Footer content goes here -->
+              </div>
+              <div class="hide-on-small-only col m3 left modal-action modal-close">
+                <div id="footerImage">
+                  <!-- Random footer image goes here
+                       Triggers when clicking the .about class -->
+                </div>
               </div>
             </div>
           </div>
@@ -121,9 +122,9 @@
             <div class="col s12 grey lighten-5" id="footer-signature">
               <!-- Logo -->
               <div class="col s6">
-              <a href="https://github.com/d3moid/frontend-nanodegree-resume" target="_blank">
-                <h4 class="hide-on-small-only teal-text thin">  o n <strong>R E S U M E</strong></h4>
-              </a>
+                <a href="https://github.com/d3moid/frontend-nanodegree-resume" target="_blank">
+                  <h4 class="hide-on-small-only teal-text thin">  o n <strong>R E S U M E</strong></h4>
+                </a>
               </div>
               <div class="col s6">
                 <!-- Twitter -->
@@ -140,13 +141,13 @@
             </div>
         </div>
       </footer>
+      <!-- Scripts -->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+      <script src="js/helper.js"></script>
+      <script src="js/resumeBuilder.js"></script>
 
     </body>
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
-    <script src="js/helper.js"></script>
-    <script src="js/resumeBuilder.js"></script>
 
   </html>
